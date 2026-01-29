@@ -11,7 +11,7 @@ import numpy as np
 
 np.random.seed(1234)
 
-n = 100
+n = 200
 x = np.random.rand(n)
 y = np.random.rand(n)
 
