@@ -50,3 +50,25 @@ ax.plot(np.random.standard_normal(1000).cumsum(),label="APL")
 ax.plot(np.random.standard_normal(1000).cumsum(),label="MSF")
 ax.legend() #loc="upper right"
 plt.show()
+
+
+#Cambios JuanCamilo
+
+
+def aleatorio():
+    import random
+    return random.randint(1,100)
+
+
+print("Número aleatorio:" + str(aleatorio()))
+
+#se cambio la semilla por el número aleatorio de la funcion que se creó
+
+
+np.random.seed(aleatorio())
+fig, ax = plt.subplots()
+ax.plot(np.random.standard_normal(1000).cumsum(),label="TLA")
+ax.plot(np.random.standard_normal(1000).cumsum(),label="APL")
+ax.plot(np.random.standard_normal(1000).cumsum(),label="MSF")
+ax.legend()
+plt.show()
